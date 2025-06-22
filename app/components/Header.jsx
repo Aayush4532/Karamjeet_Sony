@@ -63,7 +63,7 @@ const Header = () => {
         : 'bg-black/30 backdrop-blur-md shadow-lg py-4'
     }`}>
       <div className='flex justify-between items-center w-[90%] md:w-[85%] lg:w-[75%] mx-auto'>
-        <div className='text-3xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent'>KS</div>
+        <div className='text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent'>KS</div>
         
         {/* Desktop Navigation */}
         <div className="hidden md:block">

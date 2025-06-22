@@ -158,7 +158,7 @@ export default function Connect() {
           className="text-center"
         >
           <a 
-            href="/gaurav-singh-resume.pdf" 
+            href="/Karamjeet-Sony-resume.pdf" 
             download
             className="inline-flex items-center justify-center bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30"
           >
@@ -175,7 +175,7 @@ export default function Connect() {
           className="mt-24 pt-8 border-t border-gray-700/30 flex flex-col md:flex-row justify-between items-center"
         >
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            Copyright © 2025 Gaurav Singh. All rights reserved.
+            Copyright © 2025 Karamjeet Sony. All rights reserved.
           </div>
           <div className="text-gray-500 text-sm">
             {currentDate}
