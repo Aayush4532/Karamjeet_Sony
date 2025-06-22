@@ -42,7 +42,7 @@ export default function Services() {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-[#0c1120] to-[#0a0f1a] text-gray-100 py-24 px-6 overflow-hidden">
+    <section id='services' className="relative bg-gradient-to-b from-[#0c1120] to-[#0a0f1a] text-gray-100 py-24 px-6 overflow-hidden">
       {/* Background with seamless transition */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f1a2b]/70 via-[#0c1120] to-[#0a0f1a]"></div>
       

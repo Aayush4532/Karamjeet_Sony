@@ -20,7 +20,7 @@ export default function Connect() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#0c1120] to-[#0a0f1a] text-gray-100 py-24 px-6 overflow-hidden">
+    <div id='contact' className="relative min-h-screen bg-gradient-to-b from-[#0c1120] to-[#0a0f1a] text-gray-100 py-24 px-6 overflow-hidden">
       {/* Background with seamless transition */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f1a2b]/70 via-[#0c1120] to-[#0a0f1a]"></div>
       
@@ -90,8 +90,8 @@ export default function Connect() {
               </div>
               <h3 className="text-xl font-bold">Email</h3>
             </div>
-            <a href="mailto:hey@gauravsingh.co.in" className="text-cyan-300 hover:text-cyan-200 transition-colors">
-              hey@gauravsingh.co.in
+            <a href="mailto:karamjeetsony8449@gmail.com" className="text-cyan-300 hover:text-cyan-200 transition-colors">
+              karamjeetsony8449@gmail.com
             </a>
           </motion.div>
           
@@ -108,8 +108,8 @@ export default function Connect() {
               </div>
               <h3 className="text-xl font-bold">LinkedIn</h3>
             </div>
-            <a href="https://linkedin.com/in/ifeelgarv" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">
-              @ifeelgarv
+            <a href="https://linkedin.com/in/karamjeet-sony" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">
+              @karamjeet
             </a>
           </motion.div>
           
@@ -126,8 +126,8 @@ export default function Connect() {
               </div>
               <h3 className="text-xl font-bold">GitHub</h3>
             </div>
-            <a href="https://github.com/ifeelgarv" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200 transition-colors">
-              @ifeelgarv
+            <a href="https://github.com/Aayush4532" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200 transition-colors">
+              @karamjeet11
             </a>
           </motion.div>
           
@@ -144,8 +144,8 @@ export default function Connect() {
               </div>
               <h3 className="text-xl font-bold">Twitter</h3>
             </div>
-            <a href="https://twitter.com/ifeelgarv" target="_blank" rel="noopener noreferrer" className="text-sky-300 hover:text-sky-200 transition-colors">
-              @ifeelgarv
+            <a href="https://twitter.com/karamjeet11" target="_blank" rel="noopener noreferrer" className="text-sky-300 hover:text-sky-200 transition-colors">
+              @karamjeet11
             </a>
           </motion.div>
         </div>

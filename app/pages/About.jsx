@@ -24,7 +24,7 @@ export default function About() {
   const [activeTab, setActiveTab] = useState('story');
 
   return (
-    <section className="relative bg-gradient-to-b from-black to-[#0f1a2b] text-gray-100 min-h-screen py-16 px-6 overflow-hidden flex items-center">
+    <section id='about' className="relative bg-gradient-to-b from-black to-[#0f1a2b] text-gray-100 min-h-screen py-16 px-6 overflow-hidden flex items-center">
       {/* Geometric Background Pattern */}
       <div className="absolute inset-0 opacity-10" style={{ 
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -35,7 +35,7 @@ export default function About() {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full filter blur-3xl animate-blob" />
       <div className="absolute bottom-0 right-1/5 w-80 h-80 bg-purple-600/20 rounded-full filter blur-3xl animate-blob animation-delay-2000" />
 
-      <div className="relative mx-auto flex w-full max-w-6xl gap-12">
+      <div className="relative mx-auto flex w-full max-w-6xl gap-12 mt-15">
         {/* Left: Sticky 16:9 Video */}
         <div className="w-[45%] flex items-center justify-center">
           <motion.div

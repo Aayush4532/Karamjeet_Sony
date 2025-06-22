@@ -245,7 +245,7 @@ export default function HeroSectionPremium() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-gray-900 to-black overflow-hidden">
       {/* Subtle Grid Background */}
       <div
         className="absolute inset-0 z-0 opacity-20"
