@@ -127,7 +127,7 @@ export default function Connect() {
               <h3 className="text-xl font-bold">GitHub</h3>
             </div>
             <a href="https://github.com/Aayush4532" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200 transition-colors">
-              @karamjeet11
+              @Aayush4532
             </a>
           </motion.div>
           
@@ -158,8 +158,7 @@ export default function Connect() {
           className="text-center"
         >
           <a 
-            href="/Karamjeet-Sony-resume.pdf" 
-            download
+            href="/Karamjeet_Sony.pdf" 
             className="inline-flex items-center justify-center bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30"
           >
             <TbDownload className="mr-2" />

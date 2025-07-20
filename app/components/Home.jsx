@@ -10,7 +10,7 @@ const HolographicCard = ({ imageUrl = "/avatar.webp" }) => {
   const [lightPosition, setLightPosition] = useState({ x: 50, y: 50 });
   const cardRef = useRef(null);
 
-  // Handle mouse movement for 3D effect and light position
+  
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!cardRef.current) return;

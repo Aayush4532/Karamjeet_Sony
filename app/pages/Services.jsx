@@ -16,7 +16,7 @@ export default function Services() {
     },
     {
       icon: <TbPalette className="text-amber-400 text-3xl" />,
-      title: "Creative Design",
+      title: "Backend Development",
       description: "Developing unique brand identities that communicate values and connect with target audiences effectively across all platforms."
     },
     {

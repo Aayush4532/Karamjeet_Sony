@@ -26,11 +26,11 @@ export default function About() {
   return (
     <section id='about' className="relative bg-gradient-to-b from-black to-[#0f1a2b] text-gray-100 min-h-screen py-10 md:py-16 px-4 sm:px-6 overflow-hidden flex items-center">
       {/* Geometric Background Pattern */}
-      <div className="absolute inset-0 opacity-10" style={{ 
+      <div className="absolute inset-0 opacity-10" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         backgroundSize: '100px 100px'
       }} />
-      
+
       {/* Decorative Blobs - Adjusted for mobile */}
       <div className="absolute top-0 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-blue-600/20 rounded-full filter blur-3xl animate-blob" />
       <div className="absolute bottom-0 right-1/5 w-40 h-40 md:w-80 md:h-80 bg-purple-600/20 rounded-full filter blur-3xl animate-blob animation-delay-2000" />
@@ -46,25 +46,25 @@ export default function About() {
           >
             <div className="relative w-full h-full rounded-xl overflow-hidden shadow-[0_0_20px_rgba(0,219,222,0.3)] md:shadow-[0_0_40px_rgba(0,219,222,0.3)]">
               <div className="absolute inset-0 rounded-xl overflow-hidden">
-                <video 
+                <video
                   className="w-full h-full object-cover"
-                  controls 
-                  poster="/video-poster.jpg" 
-                  autoPlay 
-                  muted 
+                  controls
+                  poster="/video-poster.jpg"
+                  autoPlay
+                  muted
                   loop
                 >
                   <source src="/about-video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
-              
+
               {/* Glowing Border */}
               <div className="absolute inset-0 rounded-xl border-2 border-transparent" style={{
                 background: 'linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)',
                 boxShadow: 'inset 0 0 10px rgba(0,219,222,0.5), 0 0 15px rgba(0,219,222,0.3)'
               }} />
-              
+
               {/* Corner Accents - Smaller on mobile */}
               <div className="absolute top-0 left-0 w-10 h-10 md:w-16 md:h-16 border-t-2 border-l-2 border-cyan-400 rounded-tl-xl" />
               <div className="absolute top-0 right-0 w-10 h-10 md:w-16 md:h-16 border-t-2 border-r-2 border-purple-500 rounded-tr-xl" />
@@ -89,7 +89,7 @@ export default function About() {
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className="relative flex items-center space-x-1 md:space-x-2 px-2 md:px-4 py-1 md:py-2 text-sm md:text-base text-gray-400 data-[state=active]:text-white hover:text-white transition-colors"
+                  className="relative cursor-pointer flex items-center space-x-1 md:space-x-2 px-2 md:px-4 py-1 md:py-2 text-sm md:text-base text-gray-400 data-[state=active]:text-white hover:text-white transition-colors"
                 >
                   {tab.icon}
                   <span className="whitespace-nowrap">{tab.label}</span>
@@ -104,9 +104,9 @@ export default function About() {
             <div className="mt-4 md:mt-6 min-h-[320px] md:min-h-[420px] lg:min-h-[552px]">
               {/* Story Tab */}
               <TabsContent value="story">
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   className="h-full"
                 >
@@ -114,12 +114,24 @@ export default function About() {
                     <CardContent className="h-full flex flex-col py-4 md:py-6">
                       <h2 className="text-xl md:text-2xl font-semibold mb-3 md:mb-4 text-cyan-300">My Story</h2>
                       <div className="space-y-3 md:space-y-4 flex-grow">
-                        <p className="text-sm md:text-base leading-relaxed">
-                          I build web apps and mobile apps with clean code and creative UI. Worked as a Frontend Developer Intern at <span className="text-cyan-300 font-medium">@MythyaVerse</span>, a product-based startup founded in 2024, where I focused on building and revamping UI/UX of <span className="text-cyan-300 font-medium">@VRPlaced</span> using the latest technologies.
-                        </p>
-                        <p className="text-sm md:text-base leading-relaxed">
-                          My journey began in 2020 and continues through 2024 as a B.Tech student at <span className="text-cyan-300 font-medium">@UEMK</span>. Along the way, I've developed a passion for clean, efficient code and knowledge-sharing whether through participating in college hackathons or engaging with students and seniors.
-                        </p>
+                        <div className="text-sm md:text-base leading-relaxed">
+                          <p>
+                            I’m a developer who finds joy in building
+                            <span className="text-cyan-300 font-medium"> meaningful tech</span>. <br />
+                            I naturally gravitate towards the
+                            <span className="text-cyan-300 font-medium"> backend</span> — designing systems, writing clean logic, and making things work at scale. <br />
+                            At the same time, I care deeply about
+                            <span className="text-cyan-300 font-medium"> user experience</span> and enjoy crafting clean, intuitive interfaces when needed. <br />
+                            What drives me isn’t just technology — it’s the
+                            <span className="text-cyan-300 font-medium"> impact</span>. I believe in using my skills to solve real problems, support communities, and create tools that make a difference in people’s lives.
+                          </p>
+                          <p>
+                            My journey began early — shaped by observing life closely and learning to find joy in limited resources. <br />
+                            Growing up around struggle made me more aware, and that empathy still drives me. <br />
+                            In 2023, I got the opportunity to pursue
+                            <span className="text-cyan-300 font-medium"> Computer Science</span>, where I discovered full stack development and found my way into the world of code and creation.
+                          </p>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -128,9 +140,9 @@ export default function About() {
 
               {/* Experience Tab */}
               <TabsContent value="experience">
-                <motion.div 
-                  initial={{ x: -20, opacity: 0 }} 
-                  animate={{ x: 0, opacity: 1 }} 
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   className="h-full"
                 >
@@ -138,7 +150,7 @@ export default function About() {
                     <CardContent className="h-full flex flex-col py-4 md:py-6">
                       <h2 className="text-xl md:text-2xl font-semibold mb-3 md:mb-4 text-cyan-300">Experience</h2>
                       <ul className="space-y-3 md:space-y-4 flex-grow">
-                        <li className="border-l-2 border-cyan-500 pl-3 md:pl-4 py-1">
+                        {/* <li className="border-l-2 border-cyan-500 pl-3 md:pl-4 py-1">
                           <div className="text-cyan-300 text-sm md:text-base">Oct–Dec 2024</div>
                           <div className="font-bold text-base md:text-lg">Frontend Developer Intern at MythyaVerse</div>
                           <p className="text-gray-300 mt-1 text-sm md:text-base">Built and redesigned VRPlaced's user interface using React, Next.js, and Tailwind CSS</p>
@@ -147,7 +159,7 @@ export default function About() {
                           <div className="text-cyan-300 text-sm md:text-base">2022–2024</div>
                           <div className="font-bold text-base md:text-lg">Student Developer at UEMK</div>
                           <p className="text-gray-300 mt-1 text-sm md:text-base">Led college hackathon team, mentoring peers in web development and UI/UX design</p>
-                        </li>
+                        </li> */}
                         <li className="border-l-2 border-cyan-500 pl-3 md:pl-4 py-1">
                           <div className="font-bold text-base md:text-lg">Freelance Projects</div>
                           <p className="text-gray-300 mt-1 text-sm md:text-base">Developed portfolio sites and small apps for clients using modern web technologies</p>
@@ -160,9 +172,9 @@ export default function About() {
 
               {/* Education Tab */}
               <TabsContent value="education">
-                <motion.div 
-                  initial={{ x: 20, opacity: 0 }} 
-                  animate={{ x: 0, opacity: 1 }} 
+                <motion.div
+                  initial={{ x: 20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   className="h-full"
                 >
@@ -190,9 +202,9 @@ export default function About() {
 
               {/* Skills Tab */}
               <TabsContent value="skills">
-                <motion.div 
-                  initial={{ scale: 0.95, opacity: 0 }} 
-                  animate={{ scale: 1, opacity: 1 }} 
+                <motion.div
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   className="h-full"
                 >
@@ -208,8 +220,8 @@ export default function About() {
                             </h3>
                             <div className="flex flex-wrap gap-2 md:gap-3">
                               {skills.map(skill => (
-                                <span 
-                                  key={skill} 
+                                <span
+                                  key={skill}
                                   className="bg-gradient-to-r from-cyan-700/40 to-purple-700/40 text-cyan-200 px-3 py-1 md:px-4 md:py-2 rounded-lg text-xs md:text-sm backdrop-blur-sm border border-cyan-500/20 shadow"
                                 >
                                   {skill}

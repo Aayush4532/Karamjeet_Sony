@@ -6,62 +6,76 @@ import { TbArrowRight, TbBrandGithub, TbExternalLink } from "react-icons/tb";
 export default function Portfolio() {
   const projects = [
     {
-      title: "VRPlaced",
+      title: "Swasthya Saadhna",
       description:
-        "AI-powered immersive Interview to prepare For your dream job. We offer 5000+ job sites & comprehensive personalized feedback on your interview audio and video.",
-      tags: ["AR-VR", "Web App", "Interview"],
+        "AI-powered health assistant addressing accessibility gaps. It blends modern AI with Ayurvedic principles to offer multilingual consultations, OCR-based prescription tracking, and personalized wellness plans",
+      tags: ["AI4Health", "OCR", "Next.js"],
       features: [
-        "Virtual reality-based interview platform",
-        "AR and VR technology integration",
-        "Personalized feedback system",
-        "3 interviews per month included",
+        "OCR-based extraction of handwritten prescriptions and time tracking",
+        "Multilingual prompt generation using Google Gemini (Hindi, English, Regional)",
+        "Smart health tracker for symptom and routine monitoring",
+        "Ayurvedic wellness integration with contextual response engine"
       ],
-      action: "Explore Details →",
-      color: "from-cyan-500 to-blue-600",
+      action: "https://swasthyasaadhna.vercel.app/",
+      color: "from-purple-500 to-blue-600",
+      github: "https://github.com/Aayush4532/swaasthya-saadhna.git",
+      image: "/health.png",
+      style: {
+        borderRadius: "20px",
+        boxShadow: "0 0 20px rgba(128, 90, 213, 0.4)",
+        background: "linear-gradient(145deg, #a78bfa, #60a5fa)",
+        padding: "1.5rem"
+      }
     },
     {
-      title: "FreehandX",
+      title: "X-Room",
       description:
-        "It's not just another virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
-      tags: ["Digital Whiteboard", "Web App", "Education"],
+        "Real-time interview scheduling platform that handles fallback logic, JWT-based access, and ensures smoother coordination between HR and candidates through auto-notifications and socket-based updates.",
+      tags: ["Scheduling", "Socket.io", "Next.js"],
       features: [
-        "Real-time collaboration",
-        "Hand-drawn feel diagrams",
-        "Education-focused features",
-        "Intuitive interface",
+        "Auto-manages candidate availability, fallback notifications, and no-show handling",
+        "JWT-based secure access with time-bound tokens and role-based protection",
+        "Real-time updates in interview lobbies via WebSocket connections",
+        "Multi-user fallback system for smart redistribution of slots"
       ],
-      action: "Explore Details →",
-      color: "from-purple-500 to-pink-600",
+      action: "https://github.com/Aayush4532/X-Room.git",
+      color: "from-sky-500 to-indigo-500",
+      github: "https://github.com/Aayush4532/X-Room.git",
+      image: "/xroom.png",
+      style: {
+        objectFit: "cover",
+        objectPosition: "center 75px",
+        borderRadius: "0.75rem",
+        padding: "0.5rem",
+        backgroundColor: "#0f172a",
+        boxShadow: "0 0 20px rgba(0, 255, 153, 0.25)",
+      }
     },
     {
-      title: "MythyaVerse",
+      title: "CodeNation Platform",
       description:
-        "A product-based startup focused on creating immersive virtual experiences using cutting-edge technologies.",
-      tags: ["AR-VR", "Web App", "Gaming"],
+        "Full-stack online coding platform with real-time execution, multi-language support, and role-based access — designed to simulate platforms like LeetCode with added admin-level insights.",
+      tags: ["Full-Stack", "Judge0", "Role-Based Auth"],
       features: [
-        "Virtual world creation",
-        "Multiplayer experiences",
-        "Cross-platform compatibility",
-        "Customizable avatars",
+        "Real-time code execution in multiple languages with test case validation",
+        "Judge0 API integration for secure and scalable code evaluation",
+        "AI-powered hints and embedded video explainers for better learning",
+        "Robust JWT-based role management with rate-limiting and input sanitization",
+        "Admin panel for monitoring users and managing the question bank"
       ],
-      action: "Explore Details →",
-      color: "from-amber-500 to-orange-600",
-    },
-    {
-      title: "QuantumFlow",
-      description:
-        "A workflow automation platform that helps teams streamline their processes and increase productivity.",
-      tags: ["SaaS", "Web App", "Productivity"],
-      features: [
-        "Visual workflow builder",
-        "AI-powered automation",
-        "Team collaboration tools",
-        "Analytics dashboard",
-      ],
-      action: "Explore Details →",
-      color: "from-emerald-500 to-teal-600",
-    },
-  ];
+      action: "https://code-nation-client.vercel.app/",
+      color: "from-purple-500 to-fuchsia-500",
+      github: "https://github.com/Aayush4532/CodeNation.git",
+      image: "/codenation.png",
+      style: {
+        borderRadius: "20px",
+        boxShadow: "0 0 20px rgba(192, 38, 211, 0.4)",
+        background: "linear-gradient(145deg, #a855f7, #e879f9)",
+        padding: "1.5rem"
+      }
+    }
+  ]
+
 
   const container = {
     hidden: { opacity: 0 },
@@ -83,10 +97,8 @@ export default function Portfolio() {
       id="work"
       className="relative bg-gradient-to-b from-[#0c1120] to-[#0a0f1a] text-gray-100 py-24 px-6 overflow-hidden"
     >
-      {/* Background with seamless transition */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f1a2b]/70 via-[#0c1120] to-[#0a0f1a]"></div>
 
-      {/* Starfield Background */}
       <div className="absolute inset-0">
         {[...Array(100)].map((_, i) => (
           <div
@@ -104,7 +116,7 @@ export default function Portfolio() {
         ))}
       </div>
 
-      {/* Decorative Blobs */}
+
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full filter blur-3xl animate-blob" />
       <div className="absolute bottom-0 right-1/5 w-80 h-80 bg-purple-600/20 rounded-full filter blur-3xl animate-blob animation-delay-2000" />
 
@@ -171,10 +183,10 @@ export default function Portfolio() {
                   </div>
                   <div className="flex gap-2">
                     <button className="bg-gray-800/50 hover:bg-cyan-600/30 p-2 rounded-full transition-colors">
-                      <TbBrandGithub className="text-xl" />
+                      <a href={project.github}><TbBrandGithub className="text-xl cursor-pointer" /></a>
                     </button>
                     <button className="bg-gray-800/50 hover:bg-purple-600/30 p-2 rounded-full transition-colors">
-                      <TbExternalLink className="text-xl" />
+                      <a href={project.action}><TbExternalLink className="text-xl cursor-pointer" /></a>
                     </button>
                   </div>
                 </div>
@@ -196,15 +208,15 @@ export default function Portfolio() {
                 </div>
 
                 <a
-                  href="#"
+                  href={project.action}
                   className={`inline-flex items-center bg-gradient-to-r ${project.color} text-white font-medium py-2 px-6 rounded-full transition-all hover:shadow-lg hover:scale-[1.03] group-hover:shadow-cyan-500/30`}
                 >
-                  {project.action}
+                  Explore Details
                   <TbArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
 
-              {/* Project preview image */}
+
               <div className="relative h-64 overflow-hidden border-t border-gray-700/50">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
                 <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
@@ -220,7 +232,7 @@ export default function Portfolio() {
                     </div>
                     <div className="text-gray-500 text-lg">Project Preview</div>
                     <div className="text-gray-600 mt-2">
-                      {project.title} Screenshot
+                      <img src={project.image} alt="" style={project.style} />
                     </div>
                   </div>
                 </div>
@@ -237,7 +249,7 @@ export default function Portfolio() {
           className="text-center mt-16"
         >
           <Link href={"https://github.com/Aayush4532"}>
-            <button className="inline-flex items-center justify-center border-2 border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
+            <button className="inline-flex cursor-pointer items-center justify-center border-2 border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
               View All Projects
               <TbArrowRight className="ml-2" />
             </button>
